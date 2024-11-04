@@ -36,7 +36,7 @@ if ($id !== '' ) {
     // Check if the query was successful
     if ($result) {
         echo '新增成功';
-        header("Location: ../test.php?id=$id"."&searchText=" . urlencode($name) . "&action=sent");
+        header("Location: ../video_info.php?id=$id"."&searchText=" . urlencode($name) . "&action=sent");
         exit; // Ensure script stops after redirection
     } else {
         echo 'Error: ' . mysqli_error($lngwiki_db); // Print any SQL error

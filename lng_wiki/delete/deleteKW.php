@@ -17,5 +17,5 @@ if (!$result) {
 }
 
 // 如果刪除成功，重定向回搜尋結果頁面，帶上 searchText 參數
-header("Location: ../test.php?id=$vod_id"."&searchText=" . urlencode($searchText) . "&action=sent");
+header("Location: ../video_info.php?id=$vod_id"."&searchText=" . urlencode($searchText) . "&action=sent");
 ?>

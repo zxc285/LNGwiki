@@ -11,9 +11,23 @@ body {
     height: 100%;
     margin: 0;
 }
-
-.page {
-    flex: auto;
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 16px;
+    color: rgb(206, 206, 206);
+}
+.pagination a {
+    text-decoration: none;
+    color: #5fc0f8;
+}
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+.pagination strong {
+    color: #fff;
 }
 .sidebar {
     position: sticky;
@@ -44,18 +58,29 @@ body {
 .marquee-content {
 display: inline-block;
 white-space: nowrap;
-animation: marquee 10s linear infinite;
+animation: marquee 8s linear infinite;
 color: white;
 font-size: 60px;
 }
 
 @keyframes marquee {
 0% {
-    transform: translateX(0);
+    transform: translateX(100%);
 }
 100% {
     transform: translateX(-100%);
 }
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    font-size: 16px;
+}
+.pages{
+    display: flex;
+    color: white;
 }
 .subtitle{
     font-size: 25px;

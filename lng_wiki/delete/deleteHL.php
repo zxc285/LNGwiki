@@ -16,5 +16,5 @@ if (!$result) {
 }
 
   // 如果刪除成功
-header("Location: ../test.php?id=$vod_id"."&searchText=" . urlencode($searchText) . "&action=sent");
+header("Location: ../video_info.php?id=$vod_id"."&searchText=" . urlencode($searchText) . "&action=sent");
 ?>
